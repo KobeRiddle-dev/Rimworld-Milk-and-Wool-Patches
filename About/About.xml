@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <packageId>KobeRiddle-dev.MilkAndWoolPatches</packageId>
+    <packageId>KobeRiddle.MilkAndWoolPatches</packageId>
     <name>Milk and Wool Patches</name>
     <author>Kobe Riddle</author>
     <description>
@@ -14,5 +14,5 @@
     <loadAfter>
         <li>ReGrowth.BOTR.ExtinctAnimalsPack</li>
     </loadAfter>
-    
+
 </ModMetaData>
