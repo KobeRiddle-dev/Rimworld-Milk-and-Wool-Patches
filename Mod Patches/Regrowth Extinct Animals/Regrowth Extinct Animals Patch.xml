@@ -1,43 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+
     <!-- Woolly Mammoth (Wool) -->
     <Operation Class="PatchOperationConditional"> <!-- check if RG_WoollyMammoth def exists. if it
         doesn't, this will avoid scary red debug error popups -->
         <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]</xpath>
         <!-- if RG_WoollyMammoth exists, does it have a comps node?-->
         <match Class="PatchOperationConditional">
+
             <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps</xpath>
             <match Class="PatchOperationConditional"><!-- if it has a comps node, does it have
                 shearability?-->
                 <xpath>/Defs/ThingDef[defName =
                     "RG_WoollyMammoth"]/comps/li[@Class="CompProperties_Shearable"]</xpath>
-                <!--<match></match> -->
-                <nomatch Class="PatchOperationAdd"> <!-- if no milk, add milk to existing comps node -->
+                <nomatch Class="PatchOperationAdd"> <!-- if no wool, add wool to existing comps node -->
                     <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps</xpath>
                     <value>
                         <li Class="CompProperties_Shearable">
-                            <woolDef>RG_WoolRhinoceros</woolDef>
+                            <woolDef>RG_WoollyMammoth</woolDef>
                             <shearIntervalDays>15</shearIntervalDays>
                             <woolAmount>150</woolAmount>
                         </li>
                     </value>
                 </nomatch>
             </match>
-            <nomatch Class="PatchOperationAdd"> <!-- if no comps node, add it and milk -->
+
+            <nomatch Class="PatchOperationAdd"> <!-- if no comps node, add it and wool -->
                 <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]</xpath>
                 <value>
                     <comps>
                         <li Class="CompProperties_Shearable">
-                            <woolDef>RG_WoolRhinoceros</woolDef>
+                            <woolDef>RG_WoollyMammoth</woolDef>
                             <shearIntervalDays>15</shearIntervalDays>
                             <woolAmount>150</woolAmount>
                         </li>
                     </comps>
                 </value>
             </nomatch>
+
         </match>
-        <!--<nomatch></nomatch>
-        if RG_WoollyMammoth def doesn't exist, do nothing -->
+    </Operation>
+
+    <!-- Woolly Rhinoceros (Milk) Brute force no checks -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/comps</xpath>
+        <value>
+            <li Class="CompProperties_Milkable">
+                <milkDef>Milk</milkDef>
+                <milkIntervalDays>2</milkIntervalDays>
+                <milkAmount>15</milkAmount>
+            </li>
+        </value>
     </Operation>
 
     <!-- Woolly Rhinoceros (Milk) -->
@@ -46,7 +59,8 @@
         <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/comps</xpath>
             <match Class="PatchOperationConditional">
-                <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/comps/li[@Class="CompProperties_Milkable"]</xpath>
+                <xpath>/Defs/ThingDef[defName =
+                    "RG_WoollyRhinoceros"]/comps/li[@Class="CompProperties_Milkable"]</xpath>
                 <!-- <match></match> -->
                 <nomatch Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/comps</xpath>
