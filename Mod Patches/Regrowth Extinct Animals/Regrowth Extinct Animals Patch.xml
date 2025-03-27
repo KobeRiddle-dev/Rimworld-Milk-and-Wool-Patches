@@ -1,77 +1,267 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <!-- Woolly Mammoth (Wool) -->
-    <Operation Class="PatchOperationConditional"> <!-- check if RG_WoollyMammoth def exists. if it
-        doesn't, this will avoid scary red debug error popups -->
-        <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]</xpath>
-        <!-- if RG_WoollyMammoth exists, does it have a comps node?-->
-        <match Class="PatchOperationConditional">
-            <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps</xpath>
-            <match Class="PatchOperationConditional"><!-- if it has a comps node, does it have
-                shearability?-->
-                <xpath>/Defs/ThingDef[defName =
-                    "RG_WoollyMammoth"]/comps/li[@Class="CompProperties_Shearable"]</xpath>
-                <!--<match></match> -->
-                <nomatch Class="PatchOperationAdd"> <!-- if no milk, add milk to existing comps node -->
-                    <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps</xpath>
-                    <value>
-                        <li Class="CompProperties_Shearable">
-                            <woolDef>RG_WoolRhinoceros</woolDef>
-                            <shearIntervalDays>15</shearIntervalDays>
-                            <woolAmount>150</woolAmount>
-                        </li>
-                    </value>
-                </nomatch>
-            </match>
-            <nomatch Class="PatchOperationAdd"> <!-- if no comps node, add it and milk -->
-                <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]</xpath>
-                <value>
-                    <comps>
-                        <li Class="CompProperties_Shearable">
-                            <woolDef>RG_WoolRhinoceros</woolDef>
-                            <shearIntervalDays>15</shearIntervalDays>
-                            <woolAmount>150</woolAmount>
-                        </li>
-                    </comps>
-                </value>
-            </nomatch>
-        </match>
-        <!--<nomatch></nomatch>
-        if RG_WoollyMammoth def doesn't exist, do nothing -->
-    </Operation>
 
-    <!-- Woolly Rhinoceros (Milk) -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]</xpath>
+        <match Class="PatchOperationSequence">
+            <success>Always</success> <operations>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/statBases/BaseHealthScale</xpath>
+                    <value>
+                        <BaseHealthScale>2.5</BaseHealthScale> </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/statBases/MarketValue</xpath>
+                    <value>
+                        <MarketValue>800</MarketValue> </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/race/leatherDef</xpath>
+                    <value>
+                        <leatherDef>Leather_Heavy</leatherDef> </value>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps</xpath>
+                    <match Class="PatchOperationConditional">
+                        <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps/li[@Class="CompProperties_Shearable"]</xpath>
+                        <match Class="PatchOperationSequence">
+                             <operations>
+                                <li Class="PatchOperationReplace">
+                                    <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps/li[@Class="CompProperties_Shearable"]/woolDef</xpath>
+                                    <value><woolDef>Wool_Megasloth</woolDef></value> </li >
+                                <li Class="PatchOperationReplace">
+                                    <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps/li[@Class="CompProperties_Shearable"]/shearIntervalDays</xpath>
+                                    <value><shearIntervalDays>20</shearIntervalDays></value> </li >
+                                <li Class="PatchOperationReplace">
+                                    <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps/li[@Class="CompProperties_Shearable"]/woolAmount</xpath>
+                                    <value><woolAmount>180</woolAmount></value> </li >
+                             </operations>
+                        </match>
+                        <nomatch Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_Shearable">
+                                    <woolDef>Wool_Megasloth</woolDef>
+                                    <shearIntervalDays>20</shearIntervalDays>
+                                    <woolAmount>180</woolAmount>
+                                </li>
+                            </value>
+                        </nomatch>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_Shearable">
+                                    <woolDef>Wool_Megasloth</woolDef>
+                                    <shearIntervalDays>20</shearIntervalDays>
+                                    <woolAmount>180</woolAmount>
+                                </li>
+                                </comps>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
+                    <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps</xpath> <match Class="PatchOperationConditional">
+                        <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps/li[@Class="CompProperties_PackAnimal"]</xpath> <nomatch Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_PackAnimal">
+                                  <packingPriority>CarryMan</packingPriority>
+                                  <maxUpvoteWeight>100</maxUpvoteWeight> <speedFactor>0.7</speedFactor>
+                                </li>
+                            </value>
+                        </nomatch>
+                     </match>
+                     </li>
+
+                <li Class="PatchOperationConditional">
+                    <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/tools</xpath> <match Class="PatchOperationConditional">
+                         <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/tools/li[label = "tusks"]</xpath> <nomatch Class="PatchOperationAdd">
+                             <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/tools</xpath>
+                             <value>
+                                <li>
+                                  <label>tusks</label>
+                                  <capacities>
+                                    <li>Blunt</li>
+                                    <li>Poke</li>
+                                  </capacities>
+                                  <power>18</power>
+                                  <cooldownTime>2.5</cooldownTime>
+                                  <linkedBodyPartsGroup>TuskAttack</linkedBodyPartsGroup>
+                                  <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                                </li>
+                             </value>
+                         </nomatch>
+                    </match>
+                    <nomatch Class="PatchOperationAdd"> <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]</xpath>
+                        <value>
+                            <tools>
+                               <li>
+                                  <label>tusks</label>
+                                  <capacities><li>Blunt</li><li>Poke</li></capacities>
+                                  <power>18</power>
+                                  <cooldownTime>2.5</cooldownTime>
+                                  <linkedBodyPartsGroup>TuskAttack</linkedBodyPartsGroup>
+                                  <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                                </li>
+                                </tools>
+                        </value>
+                    </nomatch>
+                 </li>
+
+            </operations>
+        </match>
+        </Operation>
+
     <Operation Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]</xpath>
-        <match Class="PatchOperationConditional">
-            <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/comps</xpath>
-            <match Class="PatchOperationConditional">
-                <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/comps/li[@Class="CompProperties_Milkable"]</xpath>
-                <!-- <match></match> -->
-                <nomatch Class="PatchOperationAdd">
+        <match Class="PatchOperationSequence">
+             <operations>
+                <li Class="PatchOperationConditional">
                     <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/comps</xpath>
+                    <match Class="PatchOperationConditional">
+                        <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/comps/li[@Class="CompProperties_Milkable"]</xpath>
+                        <nomatch Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_Milkable">
+                                    <milkDef>Milk</milkDef>
+                                    <milkIntervalDays>2</milkIntervalDays>
+                                    <milkAmount>15</milkAmount>
+                                </li>
+                            </value>
+                        </nomatch>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]</xpath>
+                        <value>
+                            <comps>
+                                <li Class="CompProperties_Milkable">
+                                    <milkDef>Milk</milkDef>
+                                    <milkIntervalDays>2</milkIntervalDays>
+                                    <milkAmount>15</milkAmount>
+                                </li>
+                            </comps>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                     <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/tools/li[label="horn"]/power</xpath>
                     <value>
-                        <li Class="CompProperties_Milkable">
-                            <milkDef>Milk</milkDef>
-                            <milkIntervalDays>2</milkIntervalDays>
-                            <milkAmount>15</milkAmount>
-                        </li>
-                    </value>
-                </nomatch>
-            </match>
-            <nomatch Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]</xpath>
-                <value>
-                    <comps>
-                        <li Class="CompProperties_Milkable">
-                            <milkDef>Milk</milkDef>
-                            <milkIntervalDays>2</milkIntervalDays>
-                            <milkAmount>15</milkAmount>
-                        </li>
-                    </comps>
-                </value>
-            </nomatch>
+                        <power>25</power> </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/statBases/MoveSpeed</xpath>
+                    <value>
+                        <MoveSpeed>3.8</MoveSpeed> </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                     <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/race/trainability</xpath>
+                     <value>
+                        <trainability>Advanced</trainability> </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                     <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/race/meatAmount</xpath>
+                     <value>
+                        <meatAmount>120</meatAmount> </value>
+                </li>
+                </operations>
         </match>
-        <!-- <nomatch></nomatch> -->
     </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationTest">
+                 <xpath>/Defs/ThingDef[defName = "Muffalo"]/race/tamable</xpath>
+                 <value>true</value> </li>
+
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Vanilla Expanded Framework</li> </mods>
+                <match Class="PatchOperationConditional">
+                     <xpath>/Defs/ThingDef[defName = "Muffalo"]/comps</xpath>
+                     <match Class="PatchOperationConditional">
+                         <xpath>/Defs/ThingDef[defName = "Muffalo"]/comps/li[@Class="CompProperties_Glower"]</xpath>
+                         <nomatch Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName = "Muffalo"]/comps</xpath>
+                            <value>
+                                <li Class="CompProperties_Glower">
+                                  <glowRadius>3</glowRadius>
+                                  <glowColor>(100,255,100,0)</glowColor> </li>
+                            </value>
+                         </nomatch>
+                     </match>
+                     <nomatch Class="PatchOperationAdd"> <xpath>/Defs/ThingDef[defName = "Muffalo"]</xpath>
+                          <value>
+                            <comps>
+                                <li Class="CompProperties_Glower">
+                                  <glowRadius>3</glowRadius>
+                                  <glowColor>(100,255,100,0)</glowColor>
+                                </li>
+                            </comps>
+                          </value>
+                     </nomatch>
+                </match>
+                </li>
+
+            <li Class="PatchOperationAdd">
+                 <xpath>/Defs/ThingDef[defName = "Muffalo"]</xpath>
+                 <value>
+                     <modExtensions>
+                        <li Class="YourModNamespace.YourModExtensionDef"> <someCustomData>true</someCustomData>
+                           <anotherValue>42</anotherValue>
+                        </li>
+                     </modExtensions>
+                 </value>
+                 </li>
+
+            <li Class="PatchOperationRemove">
+                 <xpath>/Defs/ThingDef[defName = "Muffalo"]/tools/li[label="headbutt"]</xpath>
+            </li>
+
+        </operations>
+    </Operation>
+
+     <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="Make_Pemmican"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="Make_Pemmican"]/workAmount</xpath>
+                    <value>
+                        <workAmount>400</workAmount> </value>
+                 </li>
+                 <li Class="PatchOperationAdd">
+                     <xpath>/Defs/RecipeDef[defName="Make_Pemmican"]/ingredients/li[filter/categories/li="MeatRaw"]/filter/thingDefs</xpath>
+                     <value>
+                         <li>Meat_Insect</li>
+                     </value>
+                 </li>
+                 </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]</xpath>
+        <match Class="PatchOperationAdd"> <xpath>/Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]/prerequisites</xpath>
+             <value>
+                 <li>Smithing</li> </value>
+             </match>
+    </Operation>
+
+     <Operation Class="PatchOperationAttributeSet">
+        <xpath>/Defs/ThingDef[defName="Gun_ChargeRifle"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>BaseHumanMakeableGun</value> </Operation>
+
 </Patch>
