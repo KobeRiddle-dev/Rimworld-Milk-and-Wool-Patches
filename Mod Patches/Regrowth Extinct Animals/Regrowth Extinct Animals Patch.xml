@@ -8,9 +8,9 @@
         <match Class="PatchOperationConditional">
             <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps</xpath>
             <match Class="PatchOperationConditional"><!-- if it has a comps node, does it have
-                milk?-->
+                shearability?-->
                 <xpath>/Defs/ThingDef[defName =
-                    "RG_WoollyMammoth"]/comps/li[@Class="CompProperties_Milkable"]</xpath>
+                    "RG_WoollyMammoth"]/comps/li[@Class="CompProperties_Shearable"]</xpath>
                 <!--<match></match> -->
                 <nomatch Class="PatchOperationAdd"> <!-- if no milk, add milk to existing comps node -->
                     <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps</xpath>
@@ -49,7 +49,7 @@
                 <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/comps/li[@Class="CompProperties_Milkable"]</xpath>
                 <!-- <match></match> -->
                 <nomatch Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName = "Bison"]/comps</xpath>
+                    <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/comps</xpath>
                     <value>
                         <li Class="CompProperties_Milkable">
                             <milkDef>Milk</milkDef>
@@ -60,7 +60,7 @@
                 </nomatch>
             </match>
             <nomatch Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName = "Bison"]</xpath>
+                <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]</xpath>
                 <value>
                     <comps>
                         <li Class="CompProperties_Milkable">
