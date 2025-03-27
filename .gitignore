@@ -1,4 +1,4 @@
-# Copied from https://github.com/Vanilla-Expanded/VanillaFishingExpanded/blob/main/.gitignore
+# Copied and modified from https://github.com/Vanilla-Expanded/VanillaFishingExpanded/blob/main/.gitignore
 
 
 ## Ignore Visual Studio temporary files, build results, and
@@ -381,10 +381,6 @@ FodyWeavers.xsd
 
 # VS Code files for those working on multiple tools
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 *.code-workspace
 
 # Local History for Visual Studio Code

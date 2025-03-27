@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <packageId>KobeRiddle-dev.MilkAndWoolPatches</packageId>
+    <name>Milk and Wool Patches</name>
+    <author>Kobe Riddle</author>
+    <description>
+        A series of patches to ensure that all animals that would produce milk and/or wool do so.
+    </description>
+
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+
+    <loadAfter>
+        <li>ReGrowth.BOTR.ExtinctAnimalsPack</li>
+    </loadAfter>
+    
+</ModMetaData>
