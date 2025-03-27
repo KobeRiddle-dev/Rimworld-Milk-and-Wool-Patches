@@ -1,6 +1,6 @@
 <loadFolders>
-    <li>/</li>
     <v1.5>
+        <li>/</li>
         <li IfModActive="ReGrowth.BOTR.ExtinctAnimalsPack">Mod Patches/Regrowth Extinct Animals</li>
     </v1.5>
 </loadFolders>
