@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Vanilla milk: Cow: 14/1 (14); Dromedary: 18/2 (9); Goat: 12/3 (4); Elk, Yak: 11/1 (11); Caribou: 10/2 (5) -->
+<!-- Old Muffalo Milk: 16/2 (8) -->
+
+<Patch>
+
+    <!-- Cow Group -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Muffalo"]/comps</xpath>
+        <value>
+            <li Class="CompProperties_Milkable">
+                <milkDef>Milk</milkDef>
+                <milkIntervalDays>2</milkIntervalDays>
+                <milkAmount>14</milkAmount>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Bison"]/comps</xpath>
+        <value>
+            <li Class="CompProperties_Milkable">
+                <milkDef>Milk</milkDef>
+                <milkIntervalDays>2</milkIntervalDays>
+                <milkAmount>14</milkAmount>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Horse"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>2</milkIntervalDays>
+                    <milkAmount>12</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Donkey"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>2</milkIntervalDays>
+                    <milkAmount>12</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Elephant"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>3</milkIntervalDays>
+                    <milkAmount>36</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Rhinoceros"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>2</milkIntervalDays>
+                    <milkAmount>18</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <!-- Pig Group -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Pig"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>3</milkIntervalDays>
+                    <milkAmount>6</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Ibex"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>3</milkIntervalDays>
+                    <milkAmount>10</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Deer"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>2</milkIntervalDays>
+                    <milkAmount>9</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Gazelle"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>2</milkIntervalDays>
+                    <milkAmount>8</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <!-- Sheep Group -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Sheep"]/comps</xpath>
+        <value>
+            <li Class="CompProperties_Milkable">
+                <milkDef>Milk</milkDef>
+                <milkIntervalDays>3</milkIntervalDays>
+                <milkAmount>11</milkAmount>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Alpaca"]/comps</xpath>
+        <value>
+            <li Class="CompProperties_Milkable">
+                <milkDef>Milk</milkDef>
+                <milkIntervalDays>2</milkIntervalDays>
+                <milkAmount>9</milkAmount>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Megasloth"]/comps</xpath>
+        <value>
+            <li Class="CompProperties_Milkable">
+                <milkDef>Milk</milkDef>
+                <milkIntervalDays>3</milkIntervalDays>
+                <milkAmount>30</milkAmount>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>
