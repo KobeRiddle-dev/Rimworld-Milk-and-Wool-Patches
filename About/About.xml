@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
     <packageId>KobeRiddle.MilkAndWoolPatches</packageId>
-    <name>Milk and Wool Patches</name>
+    <name>More Milkable and Shearable Animals</name>
     <author>Kobe Riddle</author>
     <description>
-        A series of patches to ensure that all animals that would produce milk and/or wool do so.
+        A series of patches to ensure that all animals that could feasibly be milked or sheared can be, increasing the options for milk and wool!\n\nAnimals which would be harder to milk (those without a nice udder) give less milk than their similarly-sized counterparts, for both "realism" and balance.\n\nPatches for animal mods included!
     </description>
 
     <supportedVersions>
