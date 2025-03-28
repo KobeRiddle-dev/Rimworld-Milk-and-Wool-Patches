@@ -2,7 +2,7 @@
 
 <Patch>
 
-    <!-- Woolly Rhinoceros (Milk) Brute force no checks -->
+    <!-- Woolly Rhinoceros Milk (no checks) -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "RG_WoollyRhinoceros"]/comps</xpath>
         <value>
@@ -14,7 +14,7 @@
         </value>
     </Operation>
 
-    <!-- Woolly Mammoth (Wool) brute force no checks -->
+    <!-- Woolly Mammoth Wool (no checks) -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps</xpath>
         <value>
