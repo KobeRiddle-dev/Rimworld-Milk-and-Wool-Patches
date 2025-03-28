@@ -1,18 +1,22 @@
-<ThingDef ParentName="WoolBase">
-    <defName>RG_WoolMammoth</defName>
-    <label>woolly mammoth wool</label>
-    <description>Thick and coarse wool of a woolly mammoth. Quite warm.</description>
-    <possessionCount>25</possessionCount>
-    <statBases>
-        <StuffPower_Armor_Sharp>0.80</StuffPower_Armor_Sharp>
-        <StuffPower_Insulation_Cold>50</StuffPower_Insulation_Cold>
-        <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
-    </statBases>
-    <graphicData>
-        <color>(107, 81, 73)</color>
-    </graphicData>
-    <stuffProps>
-        <color>(107, 81, 73)</color>
-        <commonality>0.06</commonality>
-    </stuffProps>
-</ThingDef>
+<Defs>
+
+    <ThingDef ParentName="WoolBase">
+        <defName>RG_WoolMammoth</defName>
+        <label>woolly mammoth wool</label>
+        <description>Thick and coarse wool of a woolly mammoth. Quite warm.</description>
+        <possessionCount>25</possessionCount>
+        <statBases>
+            <StuffPower_Armor_Sharp>0.80</StuffPower_Armor_Sharp>
+            <StuffPower_Insulation_Cold>50</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+        </statBases>
+        <graphicData>
+            <color>(107, 81, 73)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(107, 81, 73)</color>
+            <commonality>0.06</commonality>
+        </stuffProps>
+    </ThingDef>
+
+</Defs>
