@@ -14,15 +14,29 @@
         </value>
     </Operation>
 
+    <!-- Synthetion Milk (no checks) -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "RG_Synthetion"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>3</milkIntervalDays>
+                    <milkAmount>10</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
     <!-- Woolly Mammoth Wool (no checks) -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps</xpath>
         <value>
             <li Class="CompProperties_Shearable">
-				<woolDef>RG_WoolMammoth</woolDef>
-				<shearIntervalDays>15</shearIntervalDays>
-				<woolAmount>200</woolAmount>
-			</li>
+                <woolDef>RG_WoolMammoth</woolDef>
+                <shearIntervalDays>15</shearIntervalDays>
+                <woolAmount>200</woolAmount>
+            </li>
         </value>
     </Operation>
 
