@@ -4,4 +4,9 @@
         <li>Mod Patches\Vanilla Animals</li>
         <li IfModActive="ReGrowth.BOTR.ExtinctAnimalsPack">Mod Patches\Regrowth Extinct Animals</li>
     </v1.5>
+    <v1.6>
+        <li>/</li>
+        <li>Mod Patches\Vanilla Animals</li>
+        <li IfModActive="ReGrowth.BOTR.ExtinctAnimalsPack">Mod Patches\Regrowth Extinct Animals</li>
+    </v1.6>
 </loadFolders>
