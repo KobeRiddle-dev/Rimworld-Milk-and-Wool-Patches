@@ -6,10 +6,10 @@
 
 <!-- Woolly Mammoth Wool (no checks) -->
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps</xpath>
+        <xpath>/Defs/ThingDef[defName = "Yak"]/comps</xpath>
         <value>
             <li Class="CompProperties_Shearable">
-                <woolDef>RG_WoolMammoth</woolDef>
+                <woolDef>WoolYak</woolDef>
                 <shearIntervalDays>15</shearIntervalDays>
                 <woolAmount>200</woolAmount>
             </li>
