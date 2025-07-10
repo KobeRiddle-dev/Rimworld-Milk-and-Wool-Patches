@@ -23,10 +23,10 @@
         <value>
             <comps>
                 <li Class="CompProperties_Milkable">
-                <milkDef>Milk</milkDef>
-                <milkIntervalDays>2</milkIntervalDays>
-                <milkAmount>16</milkAmount>
-            </li>
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>2</milkIntervalDays>
+                    <milkAmount>16</milkAmount>
+                </li>
             </comps>
         </value>
     </Operation>
@@ -37,10 +37,10 @@
         <value>
             <comps>
                 <li Class="CompProperties_Milkable">
-                <milkDef>Milk</milkDef>
-                <milkIntervalDays>3</milkIntervalDays>
-                <milkAmount>30</milkAmount>
-            </li>
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>3</milkIntervalDays>
+                    <milkAmount>30</milkAmount>
+                </li>
             </comps>
         </value>
     </Operation>
@@ -51,10 +51,10 @@
         <value>
             <comps>
                 <li Class="CompProperties_Milkable">
-                <milkDef>Milk</milkDef>
-                <milkIntervalDays>2</milkIntervalDays>
-                <milkAmount>10</milkAmount>
-            </li>
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>2</milkIntervalDays>
+                    <milkAmount>10</milkAmount>
+                </li>
             </comps>
         </value>
     </Operation>
