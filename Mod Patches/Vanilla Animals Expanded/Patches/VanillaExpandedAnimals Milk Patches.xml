@@ -3,51 +3,59 @@
 
 <Patch>
 
-    <!-- Hippo Milk -->
+    <!-- Giraffe Milk -->
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName = "AEXP_Giraffe"]/comps</xpath>
+        <xpath>/Defs/ThingDef[defName = "AEXP_Giraffe"]</xpath>
         <value>
-            <li Class="CompProperties_Milkable">
-                <milkDef>Milk</milkDef>
-                <milkIntervalDays>2</milkIntervalDays>
-                <milkAmount>18</milkAmount>
-            </li>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>2</milkIntervalDays>
+                    <milkAmount>18</milkAmount>
+                </li>
+            </comps>
         </value>
     </Operation>
 
     <!-- Hippo Milk -->
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName = "AEXP_Hippopotamus"]/comps</xpath>
+        <xpath>/Defs/ThingDef[defName = "AEXP_Hippopotamus"]</xpath>
         <value>
-            <li Class="CompProperties_Milkable">
+            <comps>
+                <li Class="CompProperties_Milkable">
                 <milkDef>Milk</milkDef>
                 <milkIntervalDays>2</milkIntervalDays>
                 <milkAmount>16</milkAmount>
             </li>
+            </comps>
         </value>
     </Operation>
 
     <!-- Indian Elephant Milk -->
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName = "AEXP_IndianElephant"]/comps</xpath>
+        <xpath>/Defs/ThingDef[defName = "AEXP_IndianElephant"]</xpath>
         <value>
-            <li Class="CompProperties_Milkable">
+            <comps>
+                <li Class="CompProperties_Milkable">
                 <milkDef>Milk</milkDef>
                 <milkIntervalDays>3</milkIntervalDays>
                 <milkAmount>30</milkAmount>
             </li>
+            </comps>
         </value>
     </Operation>
 
     <!-- Zebra Milk -->
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName = "AEXP_Zebra"]/comps</xpath>
+        <xpath>/Defs/ThingDef[defName = "AEXP_Zebra"]</xpath>
         <value>
-            <li Class="CompProperties_Milkable">
+            <comps>
+                <li Class="CompProperties_Milkable">
                 <milkDef>Milk</milkDef>
                 <milkIntervalDays>2</milkIntervalDays>
                 <milkAmount>10</milkAmount>
             </li>
+            </comps>
         </value>
     </Operation>
 
