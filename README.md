@@ -28,7 +28,7 @@ Changes are in bold. Animals which produce neither milk nor wool are omitted fro
 | **Bison**       |             | 120/15 (8)  | **14/2 (7)**    | 120/15 (8)    |
 | Caribou         | 10/2 (5)    |             | 10/2 (5)        |               |
 | Cow             | 14/1 (14)   |             | 14/1 (14)       |               |
-| Deer            |             |             | **9/2 (4.5)**   |               |
+| **Deer**            |             |             | **9/2 (4.5)**   |               |
 | **Donkey**      |             |             | **12/2 (6)**    |               |
 | **Dromedary**   | 18/2 (9)    |             | 18/2 (9)        | **75/15 (5)** |
 | Elk             | 11/1 (11)   |             | 11/1 (11)       |               |
@@ -62,12 +62,12 @@ Changes are in bold. Animals which produce neither milk nor wool are omitted fro
 | -------------------- | ----------- | ------------- | ------------- | ------------- |
 | Camel                | 18/2 (9)    | 100/15 (6.67) | 18/2 (9)      | 100/15 (6.67) |
 | **Giraffe**          |             |               | **18/2 (9)**  |               |
-| **Hippopotamus** (*) |             |               | **16/2 (8) ** |               |
+| **Hippopotamus** (*) |             |               | **16/2 (8)** |               |
 | **Indian Elephant**  |             |               | **30/3 (10)** |               |
 | Moose (*)            | 12/2 (6)    |               | 12/2 (6)      |               |
 | Muskox (*)           | 12/2 (6)    | 80/25 (3.2)   | 12/2 (6)      | 80/25 (3.2)   |
 | Wildebeest           | 15/5 (3)    |               | 15/5 (3)      |               |
-| **Zebra**            |             |               | 10/2 (5)      |               |
+| **Zebra**            |             |               | **10/2 (5)**      |               |
 
 *\* Hippopotamus, Moose, and Muskox are included in Odyssey. If you have Odyssey, they will not be duplicated.*
 
