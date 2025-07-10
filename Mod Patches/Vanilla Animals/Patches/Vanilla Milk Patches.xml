@@ -84,26 +84,13 @@
     <!-- Pig Group -->
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName = "Pig"]</xpath>
-        <value>
-            <comps>
-                <li Class="CompProperties_Milkable">
-                    <milkDef>Milk</milkDef>
-                    <milkIntervalDays>3</milkIntervalDays>
-                    <milkAmount>6</milkAmount>
-                </li>
-            </comps>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "Ibex"]</xpath>
         <value>
             <comps>
                 <li Class="CompProperties_Milkable">
                     <milkDef>Milk</milkDef>
                     <milkIntervalDays>3</milkIntervalDays>
-                    <milkAmount>10</milkAmount>
+                    <milkAmount>9</milkAmount>
                 </li>
             </comps>
         </value>
@@ -165,7 +152,7 @@
             <li Class="CompProperties_Milkable">
                 <milkDef>Milk</milkDef>
                 <milkIntervalDays>3</milkIntervalDays>
-                <milkAmount>30</milkAmount>
+                <milkAmount>18</milkAmount>
             </li>
         </value>
     </Operation>
