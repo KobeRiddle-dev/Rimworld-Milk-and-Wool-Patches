@@ -4,7 +4,7 @@
 
 <Patch>
 
-<!-- Woolly Mammoth Wool (no checks) -->
+    <!-- Yak Wool -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "Yak"]/comps</xpath>
         <value>
@@ -12,6 +12,18 @@
                 <woolDef>WoolYak</woolDef>
                 <shearIntervalDays>15</shearIntervalDays>
                 <woolAmount>200</woolAmount>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Dromedary Wool -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Yak"]/comps</xpath>
+        <value>
+            <li Class="CompProperties_Shearable">
+                <woolDef>WoolDromedary</woolDef>
+                <shearIntervalDays>15</shearIntervalDays>
+                <woolAmount>75</woolAmount>
             </li>
         </value>
     </Operation>

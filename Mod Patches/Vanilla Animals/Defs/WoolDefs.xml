@@ -19,4 +19,22 @@
         </stuffProps>
     </ThingDef>
 
+    <ThingDef ParentName="WoolBase">
+        <defName>WoolDromedary</defName>
+        <label>dromedary wool</label>
+        <description>Thick, coarse wool of a Dromedary.</description>
+        <possessionCount>25</possessionCount>
+        <statBases>
+            <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
+        </statBases>
+        <graphicData>
+            <color>(205, 185, 155)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(205, 185, 155)</color>
+            <commonality>0.06</commonality>
+        </stuffProps>
+    </ThingDef>
+
 </Defs>
