@@ -56,7 +56,7 @@ Changes are in bold. Animals which produce neither milk nor wool are omitted fro
 | **Synthetion**        |             |             | **10/3 (3.33)** |                   |
 
 
-### Vanilla Animals Expanded
+### Vanilla Animals Expanded [[vanillaexpanded.vanillaanimalsexpanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2871933948)]
 
 | Animal               | Milk Before | Wool Before   | Milk After    | Wool After    |
 | -------------------- | ----------- | ------------- | ------------- | ------------- |
