@@ -3,4 +3,17 @@
 <!-- Vanilla Wool: Alpaca, Sheep: 45/10 (4.5); Bison, Muffalo: 120/15 (8); Megasloth: 200/20 (10) -->
 
 <Patch>
+
+<!-- Woolly Mammoth Wool (no checks) -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "RG_WoollyMammoth"]/comps</xpath>
+        <value>
+            <li Class="CompProperties_Shearable">
+                <woolDef>RG_WoolMammoth</woolDef>
+                <shearIntervalDays>15</shearIntervalDays>
+                <woolAmount>200</woolAmount>
+            </li>
+        </value>
+    </Operation>
+
 </Patch>

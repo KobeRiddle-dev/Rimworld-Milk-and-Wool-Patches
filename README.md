@@ -4,6 +4,8 @@
 
 A series of patches to ensure that all animals that could feasibly be milked or sheared can be, increasing the options for milk and wool!
 
+Animals to which milkability is added use the standard, generic milk. Animals to which shearability is added are each given their own wool type.
+
 Animals which would be harder to milk (those without a nice udder) give less milk than their similarly-sized counterparts, for both "realism" and balance.
 
 **Patches for animal mods included!**
@@ -20,29 +22,50 @@ Changes are in bold.
 
 ### Vanilla Animals (Ludeon.Rimworld)
 
-| Animal          | Milk Before | Wool Before | Milk After        | Wool After  |
-| --------------- | ----------- | ----------- | ----------------- | ----------- |
-| Alpaca          |             | 45/10 (4.5) | **9/2 (4.5)**     | 45/10 (4.5) |
-| Bison           |             | 120/15 (8)  | **14/2 Days (7)** |             |
-| Caribou         | 10/2 (5)    |             | 10/2 (5)          |             |
-| Cow             | 14/1 (14)   |             | 14/1 (14)         |             |
-| Deer            |             |             | **9/2 (4.5)**     |             |
-| Donkey          |             |             | **12/2 (6)**      |             |
-| Dromedary       | 18/2 (9)    |             | 18/2 (9)          |             |
-| Elk             | 11/1 (11)   |             | 11/1 (11)         |             |
-| Elephant        |             |             | **36/3 (12)**     |             |
-| Gazelle         |             |             | **8/2 (4)**       |             |
-| Goat            | 12/3 (4)    |             | 12/3 (4)          |             |
-| Horse           |             |             | **12/2 (7)**      |             |
-| Ibex            |             |             | **9/3 (3)**       |             |
-| Megasloth       |             | 200/20 (10) | **18/3 (6)**      | 200/20 (10) |
-| Muffalo Pre 1.1 | 16/2 (8)    | 120/15 (8)  |                   | 120/15 (8)  |
-| Muffalo         |             | 120/15 (8)  | **14/2 (7)**      | 120/15 (8)  |
-| Rhinoceros      |             |             | **18/2 (9)**      |             |
-| Sheep           |             | 45/10 (4.5) | **11/3 (3.67)**   | 45/10 (4.5) |
-| Yak             | 11/1 (11)   |             | 11/1 (11)         |             |
+| Animal          | Milk Before | Wool Before | Milk After        | Wool After    |
+| --------------- | ----------- | ----------- | ----------------- | ------------- |
+| **Alpaca**      |             | 45/10 (4.5) | **9/2 (4.5)**     | 45/10 (4.5)   |
+| **Bison**       |             | 120/15 (8)  | **14/2 Days (7)** |               |
+| Caribou         | 10/2 (5)    |             | 10/2 (5)          |               |
+| Cow             | 14/1 (14)   |             | 14/1 (14)         |               |
+| Deer            |             |             | **9/2 (4.5)**     |               |
+| **Donkey**      |             |             | **12/2 (6)**      |               |
+| Dromedary       | 18/2 (9)    |             | 18/2 (9)          |               |
+| Elk             | 11/1 (11)   |             | 11/1 (11)         |               |
+| **Elephant**    |             |             | **36/3 (12)**     |               |
+| **Gazelle**     |             |             | **8/2 (4)**       |               |
+| Goat            | 12/3 (4)    |             | 12/3 (4)          |               |
+| **Horse**       |             |             | **12/2 (7)**      |               |
+| **Ibex**        |             |             | **9/3 (3)**       |               |
+| **Megasloth**   |             | 200/20 (10) | **18/3 (6)**      | 200/20 (10)   |
+| Muffalo Pre 1.1 | 16/2 (8)    | 120/15 (8)  |                   | 120/15 (8)    |
+| **Muffalo**     |             | 120/15 (8)  | **14/2 (7)**      | 120/15 (8)    |
+| **Rhinoceros**  |             |             | **18/2 (9)**      |               |
+| **Sheep**       |             | 45/10 (4.5) | **11/3 (3.67)**   | 45/10 (4.5)   |
+| **Yak**         | 11/1 (11)   |             | 11/1 (11)         | **40/10 (4)** |
 
 ### Regrowth: Extinct Animals [(Regrowth.BOTR.ExtinctAnimalsPack)](https://steamcommunity.com/sharedfiles/filedetails/?id=2266685892)
+
+| Animal                | Milk Before | Wool Before | Milk After | Wool After |
+| --------------------- | ----------- | ----------- | ---------- | ---------- |
+| **Wooly Mammoth**     | ?           |             |            |            |
+| **Woolly Rhinoceros** |             | ?           |            |            |
+| Woolly Stegosaurus    |             | ?           |            |            |
+| **Synthetion**        |             |             |            |            |
+
+
+### Vanilla Animals Expanded
+
+| Animal          | Milk Before | Wool Before | Milk After | Wool After |
+| --------------- | ----------- | ----------- | ---------- | ---------- |
+| Camel           |             |             |            |            |
+| Giraffe         |             |             |            |            |
+| Hippopotamus    |             |             |            |            |
+| Indian Elephant |             |             |            |            |
+| Moose           |             |             |            |            |
+| Musk Ox         |             |             |            |            |
+| Wildebeest      |             |             |            |            |
+| Zebra           |             |             |            |            |
 
 ## Animal Mods With Planned Support
 

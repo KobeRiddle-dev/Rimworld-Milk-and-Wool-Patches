@@ -1,0 +1,22 @@
+<Defs>
+
+    <ThingDef ParentName="WoolBase">
+        <defName>WoolYak</defName>
+        <label>yak wool</label>
+        <description>Warm, soft wool of a yak.</description>
+        <possessionCount>25</possessionCount>
+        <statBases>
+            <StuffPower_Armor_Sharp>0.4</StuffPower_Armor_Sharp>
+            <StuffPower_Insulation_Cold>35</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+        </statBases>
+        <graphicData>
+            <color>(93, 86, 84)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(93, 86, 84)</color>
+            <commonality>0.10</commonality>
+        </stuffProps>
+    </ThingDef>
+
+</Defs>
