@@ -50,7 +50,6 @@
         <mods>
             <li>Odyssey</li>
         </mods>
-        <match></match>
         <nomatch Class="PatchOperationSequence">
             <operations>
 
@@ -63,6 +62,34 @@
                                 <milkDef>Milk</milkDef>
                                 <milkIntervalDays>2</milkIntervalDays>
                                 <milkAmount>16</milkAmount>
+                            </li>
+                        </comps>
+                    </value>
+                </li>
+
+                <!-- Seal Milk -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "AEXP_Seal"]</xpath>
+                    <value>
+                        <comps>
+                            <li Class="CompProperties_Milkable">
+                                <milkDef>Milk</milkDef>
+                                <milkIntervalDays>5</milkIntervalDays>
+                                <milkAmount>15</milkAmount>
+                            </li>
+                        </comps>
+                    </value>
+                </li>
+
+                <!-- Walrus Milk -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "AEXP_Walrus"]</xpath>
+                    <value>
+                        <comps>
+                            <li Class="CompProperties_Milkable">
+                                <milkDef>Milk</milkDef>
+                                <milkIntervalDays>5</milkIntervalDays>
+                                <milkAmount>15</milkAmount>
                             </li>
                         </comps>
                     </value>
