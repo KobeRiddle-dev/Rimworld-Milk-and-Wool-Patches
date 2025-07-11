@@ -9,6 +9,8 @@
         <li>/</li>
         <li>Mod Patches\Vanilla Animals</li>
         <li IfModActive="ReGrowth.BOTR.ExtinctAnimalsPack">Mod Patches\Regrowth Extinct Animals</li>
-        <li IfModActive="VanillaExpanded.VanillaAnimalsExpanded">Mod Patches\Vanilla Animals Expanded</li>
+        <li IfModActive="VanillaExpanded.VanillaAnimalsExpanded" IfModNotActive="Ludeon.Rimworld.Odyssey">Mod Patches\Vanilla Animals Expanded No Odyssey</li>
+        <li IfModActive="VanillaExpanded.VanillaAnimalsExpanded" IfModActive="Ludeon.Rimworld.Odyssey">Mod Patches\Vanilla Animals Expanded Odyssey</li>
+
     </v1.6>
 </loadFolders>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vanilla milk values: Cow: 14/1; Dromedary: 18/2; Goat: 12/3; Elk, Yak: 11/1; Caribou: 10/2-->
+
+<Patch>
+
+    <!-- Giraffe Milk -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "AEXP_Giraffe"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>2</milkIntervalDays>
+                    <milkAmount>18</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <!-- Indian Elephant Milk -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "AEXP_IndianElephant"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>3</milkIntervalDays>
+                    <milkAmount>30</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <!-- Zebra Milk -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "AEXP_Zebra"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>2</milkIntervalDays>
+                    <milkAmount>10</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+</Patch>
