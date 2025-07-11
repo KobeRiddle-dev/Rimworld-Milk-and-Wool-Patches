@@ -44,6 +44,13 @@ Changes are in bold. Animals which produce neither milk nor wool are omitted fro
 | **Sheep**       |             | 45/10 (4.5) | **11/3 (3.67)** | 45/10 (4.5)   |
 | **Yak**         | 11/1 (11)   |             | 11/1 (11)       | **40/10 (4)** |
 
+#### New Wools!
+
+| Wool           | Insulation Cold | Insulation Heat | Armor Bonuses |
+| -------------- | --------------- | --------------- | ------------- |
+| Dromedary Wool | 10              | 24              | N/A           |
+| Yak Wool       | 35              | 10              | Sharp: 0/4    |
+
 ### Odyssey (Ludeon.Rimworld.Odyssey)
 
 *Table to be updated with unmodded wool amounts after the wiki is updated with the relevant information. This mod does not change the amounts of wool produced by animals which already produce wool.*
