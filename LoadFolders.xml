@@ -10,5 +10,7 @@
         <li>Mod Patches\Vanilla Animals</li>
         <li IfModActive="ReGrowth.BOTR.ExtinctAnimalsPack">Mod Patches\Regrowth Extinct Animals</li>
         <li IfModActive="VanillaExpanded.VanillaAnimalsExpanded">Mod Patches\Vanilla Animals Expanded</li>
+        <li IfModActive="Ludeon.Rimworld.Odyssey">Mod Patches\Odyssey</li>
+
     </v1.6>
 </loadFolders>

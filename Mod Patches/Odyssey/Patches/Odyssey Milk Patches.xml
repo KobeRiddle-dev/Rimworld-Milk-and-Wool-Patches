@@ -8,7 +8,7 @@ Caribou: 10/2 (5) -->
 
     <!-- Hippo Milk -->
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName = "Hippopotamus"]</xpath>
+        <xpath>/Defs/ThingDef[defName = "Hippo"]</xpath>
         <value>
             <comps>
                 <li Class="CompProperties_Milkable">
