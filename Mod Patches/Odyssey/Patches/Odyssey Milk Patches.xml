@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Vanilla milk: Cow: 14/1 (14); Dromedary: 18/2 (9); Goat: 12/3 (4); Elk, Yak: 11/1 (11);
+Caribou: 10/2 (5) -->
+<!-- Old Muffalo Milk: 16/2 (8) -->
+
+<Patch>
+
+    <!-- Hippo Milk -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Hippopotamus"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>2</milkIntervalDays>
+                    <milkAmount>16</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <!-- Mastodon Milk -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Mastodon"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>3</milkIntervalDays>
+                    <milkAmount>30</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <!-- Moose Milk -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Moose"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>2</milkIntervalDays>
+                    <milkAmount>12</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <!-- Muskox Milk -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Muskox"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>2</milkIntervalDays>
+                    <milkAmount>12</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <!-- Seal Milk -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Seal"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>5</milkIntervalDays>
+                    <milkAmount>15</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+    <!-- Walrus Milk -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Walrus"]</xpath>
+        <value>
+            <comps>
+                <li Class="CompProperties_Milkable">
+                    <milkDef>Milk</milkDef>
+                    <milkIntervalDays>5</milkIntervalDays>
+                    <milkAmount>15</milkAmount>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+
+</Patch>

@@ -28,7 +28,7 @@ Changes are in bold. Animals which produce neither milk nor wool are omitted fro
 | **Bison**       |             | 120/15 (8)  | **14/2 (7)**    | 120/15 (8)    |
 | Caribou         | 10/2 (5)    |             | 10/2 (5)        |               |
 | Cow             | 14/1 (14)   |             | 14/1 (14)       |               |
-| **Deer**            |             |             | **9/2 (4.5)**   |               |
+| **Deer**        |             |             | **9/2 (4.5)**   |               |
 | **Donkey**      |             |             | **12/2 (6)**    |               |
 | **Dromedary**   | 18/2 (9)    |             | 18/2 (9)        | **75/15 (5)** |
 | Elk             | 11/1 (11)   |             | 11/1 (11)       |               |
@@ -44,6 +44,36 @@ Changes are in bold. Animals which produce neither milk nor wool are omitted fro
 | **Sheep**       |             | 45/10 (4.5) | **11/3 (3.67)** | 45/10 (4.5)   |
 | **Yak**         | 11/1 (11)   |             | 11/1 (11)       | **40/10 (4)** |
 
+### Odyssey (Ludeon.Rimworld.Odyssey)
+
+*Table to be updated with unmodded wool amounts after the wiki is updated with the relevant information. This mod does not change the amounts of wool produced by animals which already produce wool.*
+
+| Animal           | Milk Before | Wool Before   | Milk After    | Wool After    |
+| ---------------- | ----------- | ------------- | ------------- | ------------- |
+| **Hippopotamus** |             |               | **16/2 (8)**  |               |
+| **Mastodon**     |             | ?             | **30/3 (10)** | ?             |
+| **Moose**        |             |               | **12/2 (6)**  |               |
+| **Muskox**       |             | ? 80/25 (3.2) | **12/2 (6)**  | ? 80/25 (3.2) |
+| **Seal**         |             |               | **15/5(3)**   |               |
+| **Walrus**       |             |               | **15/5(3)**   |               |
+
+### Vanilla Animals Expanded [[vanillaexpanded.vanillaanimalsexpanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2871933948)]
+
+| Animal               | Milk Before | Wool Before   | Milk After    | Wool After    |
+| -------------------- | ----------- | ------------- | ------------- | ------------- |
+| Camel                | 18/2 (9)    | 100/15 (6.67) | 18/2 (9)      | 100/15 (6.67) |
+| **Giraffe**          |             |               | **18/2 (9)**  |               |
+| **Hippopotamus** (*) |             |               | **16/2 (8)**  |               |
+| **Indian Elephant**  |             |               | **30/3 (10)** |               |
+| Moose (*)            | 12/2 (6)    |               | 12/2 (6)      |               |
+| Muskox (*)           | 12/2 (6)    | 80/25 (3.2)   | 12/2 (6)      | 80/25 (3.2)   |
+| **Seal (*)**         |             |               | **15/5(3)**   |               |
+| **Walrus (*)**       |             |               | **15/5(3)**   |               |
+| Wildebeest           | 15/5 (3)    |               | 15/5 (3)      |               |
+| **Zebra**            |             |               | **10/2 (5)**  |               |
+
+*\* Hippopotamus, Moose, Muskox, Seal, and Walrus are included in Odyssey. If you have Odyssey, they will not be duplicated.*
+
 ### Regrowth: Extinct Animals [(Regrowth.BOTR.ExtinctAnimalsPack)](https://steamcommunity.com/sharedfiles/filedetails/?id=2266685892)
 
 *Table to be updated after Regrowth: Extinct Animals is updated to Rimworld Version 1.6*
@@ -54,22 +84,6 @@ Changes are in bold. Animals which produce neither milk nor wool are omitted fro
 | **Woolly Rhinoceros** |             | ?           | **18/2 (9)**    | ?                 |
 | Woolly Stegosaurus    |             | ?           |                 | ?                 |
 | **Synthetion**        |             |             | **10/3 (3.33)** |                   |
-
-
-### Vanilla Animals Expanded [[vanillaexpanded.vanillaanimalsexpanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2871933948)]
-
-| Animal               | Milk Before | Wool Before   | Milk After    | Wool After    |
-| -------------------- | ----------- | ------------- | ------------- | ------------- |
-| Camel                | 18/2 (9)    | 100/15 (6.67) | 18/2 (9)      | 100/15 (6.67) |
-| **Giraffe**          |             |               | **18/2 (9)**  |               |
-| **Hippopotamus** (*) |             |               | **16/2 (8)** |               |
-| **Indian Elephant**  |             |               | **30/3 (10)** |               |
-| Moose (*)            | 12/2 (6)    |               | 12/2 (6)      |               |
-| Muskox (*)           | 12/2 (6)    | 80/25 (3.2)   | 12/2 (6)      | 80/25 (3.2)   |
-| Wildebeest           | 15/5 (3)    |               | 15/5 (3)      |               |
-| **Zebra**            |             |               | **10/2 (5)**      |               |
-
-*\* Hippopotamus, Moose, and Muskox are included in Odyssey. If you have Odyssey, they will not be duplicated.*
 
 ## Animal Mods With Planned Support
 
