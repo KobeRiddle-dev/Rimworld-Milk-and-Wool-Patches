@@ -45,4 +45,32 @@
         </value>
     </Operation>
 
+    <!-- Patches done only if Odyssey is not present -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Odyssey</li>
+        </mods>
+        <match></match>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+
+                <!-- Hippo Milk -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "AEXP_Hippopotamus"]</xpath>
+                    <value>
+                        <comps>
+                            <li Class="CompProperties_Milkable">
+                                <milkDef>Milk</milkDef>
+                                <milkIntervalDays>2</milkIntervalDays>
+                                <milkAmount>16</milkAmount>
+                            </li>
+                        </comps>
+                    </value>
+                </li>
+
+            </operations>
+        </nomatch>
+
+    </Operation>
+
 </Patch>
